@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'jakarta-signature';
+    src: url('../fonts/jakarta-signature.regular.ttf') format('truetype');
+}
+body {
+
+}
+nav {
+    display: flex;
+    font-family: Montserrat;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 1px solid #dddddd;
+}
+ 
+.center a{
+    margin: 0px 14px;
+    padding: 4px;
+}
+.left, .right a{
+    margin: 0px 4px;
+    padding: 4px;
+}
+.hero {
+    margin: 24px;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-left{
+    flex: 1;
+    justify-items: center;
+    text-align: center;
+}
+.hero-left .outer {
+    background-color: #FFCC0D;
+    margin: 50px auto;
+    width: 400px;
+    height: 300px;
+}
+.hero-left .inner {
+    height: 400px;
+    margin-top: -406px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    background-color: transparent;
+    border: 10px solid black;
+}
+.hero-left .photo{
+    margin-top: -389px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-left .photo img{
+    height: 350px;
+    width: 280px;
+}
+.hero-right {
+    flex: 1;
+}
+.hi {
+    font-family: 'jakarta-signature';
+    color: #FFCC0D;
+    font-size: 26px;
+    font-weight: bold;
+}
+h1.title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    padding: 8px 0px;
+}
+.title::after {
+    content: "";
+    margin-top: 10px;
+    display: block;
+    width: 150px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+p.summary{
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+p.signature {
+    font-family: 'jakarta-signature';
+    font-size: 48px;
+    font-weight: bold;
+}
+/* -----------------------services---------------------------- */
+.grid {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: grid;
+    grid-template: 5fr 5fr / repeat(6, 1fr);
+    gap: 20px;
+  }
+  .card {
+    display: grid;
+    height: 200px;
+    border: 1px solid #736b92;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #2f2f2f; */
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 10px 30px;
+  }
+  h3{
+      font-size: 24px;
+      font-weight: bold;
+  }
+  .card > button {
+      width: 120px;
+      height: 40px;
+      margin: 0 auto;;
+  }
+  .service1 {
+    grid-column: 1 / span 3;
+  }
+  .service2 {
+    grid-column: 4 / span 3;
+  }
+  
+  .service3 {
+    grid-column: 1 / span 3;
+  }
+  
+  .service4 {
+    grid-column: 4 / span 3;
+  }
+  /*
+  .service5 {
+    grid-column: 3 / span 2;
+  }
+  .service6 {
+    grid-column: 5 / span 2;
+  } */
+
+/* -------------------------------Contact Page------------------------------- */
+
+.contact {
+    width: 500px;
+    height: 450px;
+    margin: 100px auto;
+    padding: 10px;
+    border: 1px solid #FFCC0D;
+    text-align: center;
+  }
+  
+  .contact h1 {
+    font-family: "Montserrat";
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  .contact-form {
+    width: 500px;
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .name {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .inner {
+    box-sizing: border-box;
+    padding: 5px;
+  }
+  .inner > label {
+    font-family: "Montserrat";
+  
+    display: block;
+    text-align: left;
+    margin: 0px 10px;
+  }
+  .inner > input {
+    height: 30px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+  input:focus {
+    outline: 1px solid #FFCC0D;
+    border: none;
+  }
+  .message {
+    display: block;
+    margin: 10px;
+  }
+  .message > textarea {
+    padding: 10px;
+    resize: none;
+  }
+  .submit {
+    display: block;
+    width: 85%;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 8px 16px;
+    color: #ffffff;
+    background-color: #FFCC0D;
+    border: none;
+    font-family: "Montserrat";
+    letter-spacing: 2px;
+  }
+  .submit button:hover {
+    color: #FFCC0D;
+    background-color: transparent;
+    border: 1px solid #FFCC0D;
+  }
+/* ----------------footer---------------------- */
+
+  .footer {
+    background-color: #ffffff;
+    border-top: 1px solid #dddddd;
+    /* margin-top: 200px; */
+    padding: 30px;
+    text-align: center;
+  }
+  .footer p {
+    color: #FFCC0D;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
