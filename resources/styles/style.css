@@ -1,3 +1,16 @@
+:root {
+  --primary-color: #C8E4B2;
+  --secondary-color: #9ED2BE;
+  --heading-color: #7EAA92;
+  --paragraph-color: #FFD9B7;
+}
+:root {
+  --primary-color: #12486B;
+  --secondary-color: #419197;
+  --heading-color: #78D6C6;
+  --paragraph-color: #F5FCCD;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +19,9 @@
     font-family: 'jakarta-signature';
     src: url('../fonts/jakarta-signature.regular.ttf') format('truetype');
 }
+
+
+
 body {
 
 }
@@ -15,22 +31,29 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    border-bottom: 1px solid #dddddd;
+    /* border-bottom: 1px solid #dddddd; */
+    background-color: var(--secondary-color);
+    color: var(--paragraph-color);
 }
  
 .center a{
     margin: 0px 14px;
     padding: 4px;
+    text-decoration: none;
+    color: var(--paragraph-color);
 }
 .left, .right a{
     margin: 0px 4px;
     padding: 4px;
+  
 }
 .hero {
-    margin: 24px;
+    /* margin: 24px; */
     padding: 80px;
     display: flex;
     justify-content: space-between;
+    color: var(--primary-color);
+    background-color: var( --heading-color);
 }
 .hero-left{
     flex: 1;
@@ -38,7 +61,7 @@ nav {
     text-align: center;
 }
 .hero-left .outer {
-    background-color: #FFCC0D;
+    background-color:  var(--primary-color);
     margin: 50px auto;
     width: 400px;
     height: 300px;
@@ -50,10 +73,11 @@ nav {
     margin-right: auto;
     width: 350px;
     background-color: transparent;
-    border: 10px solid black;
+    border: 10px solid;
+    border-color: var(--secondary-color);
 }
 .hero-left .photo{
-    margin-top: -389px;
+    margin-top: -375px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -82,7 +106,7 @@ h1.title {
     width: 150px;
     height: 4px;
     border-radius: 5px;
-    background-color: #000;
+    background-color: var(--secondary-color);
 }
 
 p.summary{
